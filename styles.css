@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background: #6B46C1;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, sans-serif;
+}
+
+.conteudo {
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cartao {
+    background: white;
+    padding: 32px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.rotulo {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.valor {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.info-voo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cidades {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.codigo-cidade {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.horario {
+    font-size: 16px;
+}
+
+.aviao {
+    font-size: 24px;
+}
+
+.divisor {
+    border-top: 1px dashed #666;
+    position: relative;
+    margin: 4px -32px;
+}
+
+.divisor::before,
+.divisor::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background: #6B46C1;
+    border-radius: 50%;
+    position: absolute;
+    top: -12px;
+}
+
+.divisor::before {
+    left: -12px;
+}
+
+.divisor::after {
+    right: -12px;
+}
+
+.info-passageiro {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-embarque {
+    display: flex;
+    gap: 32px;
+}
+
+.detalhes-embarque {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.horario-embarque {
+    background: #633BBC;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.qr-code {
+    flex: 1;
+}
+
+
+.atencao {
+    font-size: 14px;
+}
+
+.rodape {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    max-width: 280px;
+    margin: 20px auto 0;
+}
+
+@media (max-width: 400px) {
+    .cartao {
+        padding: 24px;
+    }
+    
+    .codigo-cidade {
+        font-size: 32px;
+    }
+    
+    .info-embarque {
+        gap: 24px;
+    }
+}
