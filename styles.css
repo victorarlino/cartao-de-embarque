@@ -122,8 +122,20 @@ h1 {
 
 .qr-code {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
+.qr-imagem {
+    width: 160px;
+    height: 160px;
+    background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/QR%20Code%20(1)-mu7NdRJnm0WM4WsLHFHbePV7tZpi31.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 .atencao {
     font-size: 14px;
@@ -149,3 +161,4 @@ h1 {
         gap: 24px;
     }
 }
+
